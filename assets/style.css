@@ -1,0 +1,10 @@
+* {
+    background-color: aqua;
+}
+
+.timer {
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right:10px
+}
