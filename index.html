@@ -10,16 +10,36 @@
 <body>
     <header>
         <button class="top-nav">View Highscores</button>
-        <div class="timer">Time: 80</div>
+        <div class="timer">Time: 75</div>
     </header>
     <main>
-
-        
-        
-        
-        
+        <div class="quiz-content">
+        <h1>Get ready to take a coding quiz!!</h1>
+        <p>Try your best to answer all the questions before the timer runs out. 
+            <br>Heads up: getting a wrong answer subtracts 5secs off the timer!
+        </p>
+        <button class="start-btn">Start Quiz</button>
+        </div>
+        <div class="game"></div>
+        <!-- game over, message will appear -->
+        <div class="solved">
+            <h1>Game is over</h1>
+            <p>Enter initials to keep score</p>
+            <form id="initials-input">
+                <label id="initials">Enter Initials:</label>
+                <input type="text" id="initials" name="initials">
+                <input class="button" type="submit" value="submit">
+            </form>
+        </div>
+        <div id="high-scores">
+                <h2>Top Score Record<b</h2>
+                    <ul id="score-list"></ul>
+        </div>
+        <div>
+            <button class="goBack-btn">Go Back</button>
+            <button class="clearHighScores-btn">Clear Highscores</button>
+        </div>
     </main>
-    
     <script src="assets/script.js"></script>
 </body>
 </html>
