@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <button class="top-nav">View Highscores</button>
+        <button class="top-nav" id="viewHighScores">View Highscores</button>
         <div class="timer">Time: 75</div>
     </header>
     <main>
@@ -21,26 +21,27 @@
         <button class="start-btn">Start Quiz</button>
         </div>
         <div class="game hidden">
-           <p class= "answers"></p> 
             
         </div>
+        <div class= "answers hidden"></div>
         <!-- game over, message will appear -->
-        <div class="solved hidden">
+        <div class="solved hidden" id="usersScore">
             <h1>Game is over</h1>
-            <p>Enter initials to keep score</p>
+            <p>This is your final score: <span id="finalScore"></span></p>
+            <!-- <p>Enter initials to keep score <button id="submit">Submit</button></p> -->
             <form id="initials-input">
-                <label id="initials">Enter Initials:</label>
-                <input type="text" id="initials" name="initials">
-                <input class="button" type="submit" value="submit">
+                <label>Enter Initials:</label>
+                <input type="text" id="initials" name="initials"> 
+                <input class="button" type="button" id="submit" value="submit">
             </form>
         </div>
-        <div class="high-scores hidden">
+        <div class="high-scores hidden" id="scores">
                 <h2>Top Score Record<b</h2>
-                    <ul id="score-list"></ul>
-        <!-- </div>
-        <div> -->
-            <button class="goBack-btn">Go Back</button>
-            <button class="clearHighScores-btn">Clear Highscores</button>
+                    <ol id="score-list"></ol>
+                    <button id="restart">Play Again</button>
+                    <button id="clearHighScores">Clear HighScores</button>
+            <!-- <button class="goBack-btn">Go Back</button>
+            <button class="clearHighScores-btn">Clear Highscores</button> -->
         </div>
     </main>
     <script src="assets/script.js"></script>
